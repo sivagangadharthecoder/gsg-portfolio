@@ -6,21 +6,21 @@ const mywork_data = [
         w_name: "Travel Tale",
         w_img: p1,
         source_code: "https://github.com/sivagangadharthecoder/Trave-Tale",
-        live_demo: "https://sivagangadharthecoder.github.io/Travel-tale/#tslider"
+        live_demo: "https://sivagangadharthecoder.github.io/travel_tale_final/index.html"
     },
     {
         w_no: 2,
         w_name: "Project 2",
         w_img: p1,
         source_code: "https://github.com/sivagangadharthecoder",
-        live_demo: "https://sivagangadharthecoder.github.io/Travel-tale/#tslider"
+        live_demo: "https://sivagangadharthecoder.github.io/travel_tale_final/index.html"
     },
     {
         w_no: 3,
         w_name: "Project 3",
         w_img: p1,
         source_code: "https://github.com/sivagangadharthecoder",
-        live_demo: "https://sivagangadharthecoder.github.io/Travel-tale/#tslider"
+        live_demo: "https://sivagangadharthecoder.github.io/travel_tale_final/index.html"
     },
     
 ];
