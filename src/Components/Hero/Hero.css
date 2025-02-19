@@ -1,0 +1,116 @@
+.profilepic {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    padding: 20px; /* Added padding for smaller screens */
+}
+
+.hero img {
+    margin-top: 80px;
+}
+
+.hero h1 {
+    text-align: center;
+    width: 80%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero h1 span {
+    background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    text-align: center;
+    width: 50%;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-resume {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* Set text color */
+}
+
+.hero-resume:hover {
+    border: 2px solid white;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 40px; /* Smaller font size for title */
+    }
+
+    .hero p {
+        width: 70%; /* Increase width for better readability */
+        font-size: 20px; /* Smaller font size for paragraph */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .hero {
+        gap: 25px; /* Reduce gap for smaller screens */
+    }
+
+    .hero img {
+        margin-top: 50px; /* Adjust margin for mobile */
+    }
+
+    .hero h1 {
+        font-size: 30px; /* Smaller font size for title */
+        width: 90%; /* Increase width for better readability */
+    }
+
+    .hero p {
+        width: 90%; /* Increase width for better readability */
+        font-size: 18px; /* Smaller font size for paragraph */
+        line-height: 30px; /* Adjust line height */
+    }
+
+    .hero-resume {
+        font-size: 16px; /* Smaller font size for button */
+    }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 25px; /* Smaller font size for title */
+    }
+
+    .hero p {
+        font-size: 16px; /* Smaller font size for paragraph */
+        line-height: 25px; /* Adjust line height */
+    }
+
+    .hero-resume {
+        padding: 8px 16px; /* Smaller padding for button */
+        font-size: 14px; /* Smaller font size for button */
+    }
+}

@@ -1,0 +1,245 @@
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 0px 20px;
+}
+
+/* Title Styling */
+.contact-title {
+    position: relative;
+    text-align: center;
+}
+
+.contact-title h1 {
+    padding: 0 20px;
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Left Section */
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+    max-width: 500px;
+}
+
+.contact-left h1 {
+    font-size: 30px;
+    background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+    color: #D8D8D8;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Contact Details */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-detail img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-detail a {
+    text-decoration: none;
+    color: #D8D8D8;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
+    color: #4F6BFE;
+}
+
+/* Right Form Section */
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-right label {
+    color: #D8D8D8;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Input Fields */
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.contact-right textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* Submit Button */
+.contact-submit {
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-submit:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+/* Toast Notification Styles */
+.Toastify__toast-container {
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+}
+
+.Toastify__toast {
+    font-size: 16px;
+    color: white;
+    background: #4F6BFE;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets and Smaller Screens */
+@media screen and (max-width: 1024px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact-left h1 {
+        font-size: 28px;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        font-size: 15px;
+    }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 768px) {
+    .contact-title h1 {
+        font-size: 35px;
+    }
+
+    .contact-left h1 {
+        font-size: 26px;
+    }
+
+    .contact-left p {
+        font-size: 14px;
+    }
+
+    .contact-right label {
+        font-size: 14px;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .contact-submit {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .Toastify__toast-container {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Small Phones */
+@media screen and (max-width: 480px) {
+    .contact {
+        gap: 40px;
+    }
+
+    .contact-title h1 {
+        font-size: 30px;
+    }
+
+    .contact-left h1 {
+        font-size: 24px;
+    }
+
+    .contact-left p {
+        font-size: 14px;
+    }
+
+    .contact-right label {
+        font-size: 14px;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .contact-submit {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .Toastify__toast-container {
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+    }
+}

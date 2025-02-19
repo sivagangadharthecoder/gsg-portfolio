@@ -1,0 +1,192 @@
+.loggo {
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 170px;
+  width: 100%;
+}
+
+/* Default Navbar Menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-size: 18px;
+  gap: 60px;
+}
+
+/* Connect Button */
+.nav-connect {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.07);
+}
+
+/* Nav Links */
+.nav-menu li {
+  cursor: pointer;
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.anchor-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #4F6BFE;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  background: rgba(17, 26, 36, 0.95);
+  --backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.4s ease-in-out;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #8BCEF7;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 786px) {
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px;
+  }
+  
+  .nav-menu,
+  .nav-connect {
+      display: none;
+  }
+  
+  .hamburger {
+      display: block;
+      margin-left: auto;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 10px; /* Reduce margin to prevent overflow */
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Ensure the body doesn’t allow horizontal scrolling */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Adjust sidebar to prevent horizontal scrolling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%; /* Set to full width for better responsiveness */
+  height: 100%;
+  background: rgba(17, 26, 36, 0.95);
+  --backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.4s ease-in-out;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Adjust sidebar menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+/* Fix for small screens */
+@media screen and (max-width: 786px) {
+  .navbar {
+      margin: 0;
+      padding: 10px 20px;
+  }
+
+  .sidebar {
+      width: 100%;
+  }
+}
+

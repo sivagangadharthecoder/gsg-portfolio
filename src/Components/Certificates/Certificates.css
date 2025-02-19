@@ -1,0 +1,135 @@
+.certificates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* margin: 80px 170px; */
+}
+
+.certificates-title {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.certificates-title h1 {
+    padding: 0 30px;
+    font-size: 50px;
+    font-weight: 600;
+    background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.certificates-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 40px;
+    margin-bottom: 80px;
+    justify-items: center; /* Center cards horizontally */
+    width: 100%; /* Ensure container takes full width */
+}
+
+.certificate-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content inside cards */
+    gap: 20px;
+    padding: 60px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+    width: 100%; /* Ensure cards take full width of their container */
+    max-width: 350px; /* Limit card width */
+}
+
+.certificate-format h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center; /* Center text */
+}
+
+.certificate-format h2 {
+    font-size: 20px;
+    font-weight: 800;
+    background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center; /* Center text */
+}
+
+.certificate-format p {
+    color: #d4d4d4;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 300px;
+    text-align: center; /* Center text */
+}
+
+.certificate-download {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #4F6BFE;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8BCEF7;
+}
+
+.certificate-format:hover {
+    border: 2px solid #4F6BFE;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .certificates {
+        margin: 80px 50px; /* Adjust margin for smaller screens */
+    }
+
+    .certificates-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust card width */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .certificates {
+        margin: 40px 20px; /* Adjust margin for mobile */
+    }
+
+    .certificate-format {
+        padding: 30px; /* Smaller padding for mobile */
+    }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+    .certificates-title h1 {
+        font-size: 30px; /* Smaller font size for title */
+    }
+
+    .certificate-format {
+        max-width: 100%; /* Full width for very small screens */
+    }
+}

@@ -1,0 +1,273 @@
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 60px 120px;
+}
+
+/* Title */
+.about-title {
+    position: relative;
+    text-align: center;
+}
+
+.about-title h1 {
+    padding: 0 30px;
+    font-size: 45px;
+    font-weight: 600;
+    background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Profile Image */
+.about-pic {
+    width: 280px;
+    height: 320px;
+    border-radius: 20px;
+}
+
+/* About Sections */
+.about-sections {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+/* About Right Content */
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Paragraph */
+.about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Skills */
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-skill {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.about-skill p {
+    min-width: 140px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.about-skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 7px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+}
+
+/* Achievements */
+.about-achievements {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.about-achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: 0.5s;
+    min-width: 200px;
+}
+
+.about-achievement h1 {
+    font-size: 45px;
+    font-weight: 400;
+    background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-achievement p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Hover Effects */
+.about-skill:hover,
+.about-achievement:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .about {
+        margin: 50px 80px;
+        gap: 50px;
+    }
+
+    .about-sections {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-right {
+        gap: 40px;
+    }
+
+    .about-pic {
+        width: 250px;
+        height: 290px;
+    }
+
+    .about-title h1 {
+        font-size: 40px;
+    }
+
+    .about-achievements {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        margin: 40px 50px;
+        gap: 40px;
+    }
+
+    .about-title h1 {
+        font-size: 35px;
+    }
+
+    .about-sections {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-pic {
+        width: 220px;
+        height: 260px;
+    }
+
+    .about-skill p {
+        min-width: 120px;
+        font-size: 13px;
+    }
+
+    .about-skill hr {
+        height: 6px;
+    }
+
+    .about-achievement h1 {
+        font-size: 40px;
+    }
+
+    .about-achievement p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        margin: 30px 30px;
+        gap: 30px;
+    }
+
+    .about-title h1 {
+        font-size: 30px;
+    }
+
+    .about-sections {
+        gap: 20px;
+    }
+
+    .about-pic {
+        width: 180px;
+        height: 220px;
+    }
+
+    .about-para {
+        font-size: 14px;
+    }
+
+    .about-skills {
+        gap: 10px;
+    }
+
+    .about-skill p {
+        min-width: 100px;
+        font-size: 12px;
+    }
+
+    .about-skill hr {
+        height: 5px;
+    }
+
+    .about-achievement h1 {
+        font-size: 35px;
+    }
+
+    .about-achievement p {
+        font-size: 10px;
+    }
+    .about-achievements hr {
+        display: none;
+    }
+}
+
+/* Experience & Projects */
+.about-experience, .about-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-experience h2, .about-projects h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-experience hr, .about-projects hr {
+    flex: 1;
+    height: 4px;
+    border: none;
+    background: linear-gradient(264deg, #4F6BFE -5.09%, #8BCEF7 106.28%);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-experience h2, .about-projects h2 {
+        flex-direction: column;  /* Stack title & hr vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-experience hr, .about-projects hr {
+        width: 100%;  /* Make the hr full-width */
+    }
+}
+
