@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import siva from '../../assets/siva.jpeg';
-import resume from '../../assets/1298RESUME.pdf'; 
+import resume from '../../assets/1298CV.pdf'; 
 
 const Hero = () => {
     return (
